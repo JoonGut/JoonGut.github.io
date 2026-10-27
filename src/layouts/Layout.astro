@@ -1,0 +1,42 @@
+---
+import '@fontsource-variable/onest';
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<Header />
+		<slot />
+	</body>
+</html>
+
+<style>
+	:root{
+		color-scheme: light dark;
+	}
+	html{
+		font-family: 'Onest Variable', sans-serif, system-ui;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		background:#050505;
+		color: #ededed;
+		min-height: 100vh;
+		justify-content: center;
+	}
+	nav a {
+		color: inherit;
+		text-decoration: none;
+	}
+</style>
