@@ -31,3 +31,6 @@ pnpm-debug.log*
 
 #Carpeta de openspec
 .openspec/
+
+# Foto
+src/components/icons/jgutierrez.png

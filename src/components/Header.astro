@@ -1,5 +1,10 @@
-<header class="flex justify-between items-center py-3 w-[1120px]">
-<img class="rounded-full h-12 w-auto" src="" alt="jgutierrez foto" />
+---
+import { Image } from 'astro:assets';
+import foto from './icons/jgutierrez-avatar.png';
+---
+
+<header class="sticky top-0 z-50 mx-auto flex w-full max-w-[1120px] items-center justify-between px-6 py-4">
+<Image src={foto} alt="Foto de Jon Gutiérrez" width={112} height={112} class="h-14 w-14 rounded-full object-cover" />
 
 <nav class="flex flex-row gap-x-10 opacity-80">
     <a href="/">Home</a>

@@ -15,6 +15,7 @@ import Header from '../components/Header.astro';
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 		<Header />
 		<slot />
 	</body>
@@ -33,6 +34,13 @@ import Header from '../components/Header.astro';
 		background:#050505;
 		color: #ededed;
 		min-height: 100vh;
+		justify-content: flex-start;
+	}
+	:global(main) {
+		display: flex;
+		flex: 1;
+		width: 100%;
+		align-items: center;
 		justify-content: center;
 	}
 	nav a {

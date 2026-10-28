@@ -1,18 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import LinkedInIcon from'../components/icons/LinkedInIcon.astro';
+import GithubIcon from'../components/icons/GithubIcon.astro';
+import GmailIcon from'../components/icons/GmailIcon.astro';
+import Experiencia from '../components/Experiencia.astro';
 ---
 
-<Layout>
+<Layout title="Porfolio de Jon Gutierrez - Desarrollador de Sofware e Inteligencia Artificial - Analista de datos">
 	<main>
 		<section class="w-full max-w-[740px] mx-auto py-10">
-			<h1 class="flex flex-wrap items-center justify-center gap-3 text-white text-5xl font-bold">Hey, soy Jon! <Badge>Disponible para trabajar</Badge></h1>
+			<h1 class="flex flex-wrap items-center justify-center gap-3 text-white text-5xl font-bold">Hey, soy Jon!<a href="https://www.linkedin.com/in/jon-gutierrez-rodr%C3%ADguez-78096937b/" target="_blank" rel="noopener noreferrer"> <Badge>Disponible para trabajar</Badge></a></h1>
 			<h2 class="mt-4 text-center text-xl text-neutral-300">Desarrollador web y diseñador de experiencia de usuario</h2>
-			<ul>
-				<li>Desarrollo de aplicaciones web y móviles</li>
-				<li>Diseño de interfaces y experiencia de usuario</li>
-				<li>Optimización de rendimiento y SEO</li>
+			<ul class="mt-6 flex flex-wrap items-center justify-center gap-3">
+				<li><a href="https://www.linkedin.com/in/jon-gutierrez-rodr%C3%ADguez-78096937b/" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10" target="_blank" rel="noopener noreferrer"><LinkedInIcon class="w-4 h-4" /> LinkedIn</a></li>
+				<li><a href="https://github.com/JoonGut" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10" target="_blank" rel="noopener noreferrer"><GithubIcon class="w-4 h-4" /> GitHub</a></li>
+				<li><a href="mailto:gutijon48@gmail.com" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10"><GmailIcon class="w-4 h-4" /> Correo electrónico</a></li>
 		</ul>
+			<div class="mt-10">
+				<Experiencia />
+			</div>
 		</section>
 	</main>
 </Layout>
