@@ -33,4 +33,4 @@ pnpm-debug.log*
 .openspec/
 
 # Foto
-src/components/icons/jgutierrez.png
+src/assets/img

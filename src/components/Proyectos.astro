@@ -1,0 +1,41 @@
+---
+import robotImage from '../assets/img/imagen-robot.png';
+import cyberImage from '../assets/img/cyber.png';
+
+const PROYECTOS = [
+  {
+    title: 'Analisis de datos en robots',
+    description: 'Diseño e implementacion de una infraestructura automatica para la extracción, procesamiento y analisis de datos generados por robots',
+    link: 'https://www.somorrostro.com/tres-estudiantes-de-iab4-convierten-los-datos-de-los-robots-en-decisiones-mas-inteligentes/',
+    image: robotImage.src,
+    tags: ['Grafana', 'Docker', 'Bash', 'Python', 'Influxdb']
+  },
+  {
+    title: 'Concurso de ciberseguridad',
+    description: 'Semifinalista en la ciberlehia 2026, un campeonato de ciberseguridad organizado por la Viceconsejeria de Formacion Profesional, en el que compiten mas de 100 grupos de estudiantes',
+    link: 'https://cyberlehia.fpeuskadi.eus/es/',
+    image: cyberImage.src,
+    tags: ['Burp Suite', 'SQLMap', 'Dirbuster', 'Wireshark']
+  }];
+---
+<!--
+<div class="mx-auto flex w-full max-w-md flex-col gap-5">
+-->
+<div class="mx-auto grid w-full max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2">
+
+  {PROYECTOS.map(({ title, description, link, image, tags }) => (
+    <div class="flex min-h-[26rem] flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg transition-transform duration-200 hover:-translate-y-1">
+      <img src={image} alt={`Captura de pantalla del ${title}`} class="h-40 w-full bg-black/20 object-contain md:h-48" />
+      <div class="flex flex-1 flex-col gap-2.5 p-5">
+        <h3 class="text-lg font-semibold text-white text-center">{title}</h3>
+        <p class="text-sm text-neutral-300">{description}</p>
+        <ul class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <li class="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-neutral-300">{tag}</li>
+          ))}
+        </ul>
+        <a href={link} target="_blank" rel="noopener noreferrer" class="mt-auto inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300">Ver más →</a>
+      </div>
+    </div>
+  ))}
+</div>

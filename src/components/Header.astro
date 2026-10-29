@@ -1,16 +1,16 @@
 ---
 import { Image } from 'astro:assets';
-import foto from './icons/jgutierrez-avatar.png';
+import foto from '../assets/img/jgutierrez-avatar.png';
 ---
 
-<header class="sticky top-0 z-50 mx-auto flex w-full max-w-[1120px] items-center justify-between px-6 py-4">
-<Image src={foto} alt="Foto de Jon Gutiérrez" width={112} height={112} class="h-14 w-14 rounded-full object-cover" />
+<header class="sticky top-0 z-50 mx-auto flex w-full max-w-[1120px] items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
+<Image src={foto} alt="Foto de Jon Gutiérrez" width={112} height={112} class="h-10 w-10 shrink-0 rounded-full object-cover sm:h-14 sm:w-14" />
 
-<nav class="flex flex-row gap-x-10 opacity-80">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/projects">Proyectos</a>
-    <a href="/contact">Contacto</a>
-</nav>
+<nav class="flex min-w-0 flex-row items-center gap-x-3 overflow-x-auto whitespace-nowrap text-sm opacity-80 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:gap-x-6 md:gap-x-10 md:text-base">
+    <a href="#top">Inicio</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#estudios">Estudios</a>
+ </nav>
 
 </header>
