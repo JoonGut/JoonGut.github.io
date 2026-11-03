@@ -31,3 +31,6 @@ pnpm-debug.log*
 
 #Carpeta de openspec
 .openspec/
+
+#CV
+src/assets/cv/cv_jgutierrez.pdf

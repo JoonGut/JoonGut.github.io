@@ -4,10 +4,14 @@ import Badge from '../components/Badge.astro';
 import LinkedInIcon from'../components/icons/LinkedInIcon.astro';
 import GithubIcon from'../components/icons/GithubIcon.astro';
 import GmailIcon from'../components/icons/GmailIcon.astro';
+import CvIcon from '../components/icons/CvIcon.astro';
+import cvUrl from '../assets/cv/cv_jgutierrez.pdf';
 import Experiencia from '../components/Experiencia.astro';
 import Proyectos from '../components/Proyectos.astro';
+import Estudios from '../components/Estudios.astro';
 import Briefcase from '../components/icons/Briefcase.astro';
 import Code from '../components/icons/Code.astro';
+import Book from '../components/icons/Book.astro';
 ---
 
 <Layout title="Porfolio de Jon Gutierrez - Desarrollador de Sofware e Inteligencia Artificial - Analista de datos">
@@ -19,6 +23,7 @@ import Code from '../components/icons/Code.astro';
 				<li><a href="https://www.linkedin.com/in/jon-gutierrez-rodr%C3%ADguez-78096937b/" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10" target="_blank" rel="noopener noreferrer"><LinkedInIcon class="w-4 h-4" /> LinkedIn</a></li>
 				<li><a href="https://github.com/JoonGut" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10" target="_blank" rel="noopener noreferrer"><GithubIcon class="w-4 h-4" /> GitHub</a></li>
 				<li><a href="mailto:gutijon48@gmail.com" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10"><GmailIcon class="w-4 h-4" /> Correo electrónico</a></li>
+				<li><a href={cvUrl} download="cv_jgutierrez.pdf" class="inline-flex h-10 items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 text-sm text-neutral-300 transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10"><CvIcon class="w-4 h-4" /> Currículum</a></li>
 		</ul>
 		</section>
 		<section class="w-full max-w-[740px] mx-auto px-4 py-4 sm:px-6 sm:py-6">
@@ -28,6 +33,15 @@ import Code from '../components/icons/Code.astro';
 				</h2>
 				<br />
 				<Experiencia />
+			</div>
+		</section>
+		<section class="w-full max-w-[740px] mx-auto px-4 py-8 sm:px-6 sm:py-10">
+			<div id = "estudios" class="mt-4 sm:mt-6 lg:mt-10">
+				<h2 class="text-2xl font-bold text-white mb-4 flex gap-x-2 items-center sm:text-3xl">
+					<Book class="size-6" /> Estudios
+				</h2>
+				<br />
+				<Estudios />
 			</div>
 		</section>
 		<section class="w-full max-w-[740px] mx-auto px-4 py-8 sm:px-6 sm:py-10">
